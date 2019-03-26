@@ -8,5 +8,15 @@
 </head>
 <body>
     <h1>Well done, Wes</h1>
+    <form action="/" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome">
+        <input type="submit" value="cadastrar">
+    </form>
+    <ul>
+    <% alunos.forEach((aluno)=>{ %>
+        <li>Aluno: <%= aluno.nome %></li>
+    <% }); %>
+    </ul>
 </body>
 </html>
