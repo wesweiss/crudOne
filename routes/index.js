@@ -17,6 +17,6 @@ router.post('/', (req, res)=>{
     let newAluno = {nome: nome};
     Aluno.create(newAluno, (err, newlyCreated)=>{
         if (err) {console.log(err)} else {console.log(newlyCreated);res.redirect("/");}
-    })
-})
+    });
+});
 module.exports = router;
